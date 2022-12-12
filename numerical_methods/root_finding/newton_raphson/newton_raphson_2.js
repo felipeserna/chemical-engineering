@@ -1,7 +1,3 @@
-/*
-Finding the roots of functions is important in many engineering
-applications such as signal processing and optimization.
-*/
 const f = (x) => x**3 - 100*x**2 - x + 100;
 const df = (x) => 3*x**2 - 200*x - 1;
 
