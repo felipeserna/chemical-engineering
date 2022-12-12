@@ -45,7 +45,7 @@ function newton_raphson(f, df, x0, tol) {
   }
 }
 
-// Initial guess: P * Vm0 = R * T
+// Initial guess: Ideal gases: P * Vm0 = R * T
 const Vm0 = R * T / P;
 
 const root = newton_raphson(f, df, Vm0, 1e-6);
