@@ -40,9 +40,7 @@ function newton_raphson(f, df, x0, tol) {
   if (Math.abs(f(x0)) < tol) {
     return x0;
   }
-  else {
-    return newton_raphson(f, df, x0 - f(x0)/df(x0), tol);
-  }
+  return newton_raphson(f, df, x0 - f(x0)/df(x0), tol);
 }
 
 // Initial guess: Ideal gases: P * Vm0 = R * T

@@ -7,9 +7,7 @@ function newton_raphson(f, df, x0, tol) {
   if (Math.abs(f(x0)) < tol) {
     return x0;
   }
-  else {
-    return newton_raphson(f, df, x0 - f(x0)/df(x0), tol);
-  }
+  return newton_raphson(f, df, x0 - f(x0)/df(x0), tol);
 }
 
 //const estimate = newton_raphson(f, f_prime, 0.29, 1e-10);
