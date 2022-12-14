@@ -16,10 +16,7 @@ double myNewtonRaphson(Func<double, double> f, Func<double, double> df, double x
     {
         return x0;
     }
-    else
-    {
-        return myNewtonRaphson(f, df, x0 - f(x0) / df(x0), tol);
-    }
+    return myNewtonRaphson(f, df, x0 - f(x0) / df(x0), tol);
 }
 
 double estimate = myNewtonRaphson(myFunction, myFunctionPrime, 1.5, 1e-12);
