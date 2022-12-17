@@ -1,3 +1,7 @@
+// Benzene toluene at vapor liquid equilibrium.
+// X is benzene in liquid
+// Y is benzene in vapor
+// Find Temperature and Y
 const P = 760; // mmHg
 const X = 0.5; // Benzene. (1 - X) is Toluene
 //Log10 Ps = A - B/(T+C) // mmHg and °C
